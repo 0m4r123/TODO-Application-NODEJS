@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/7adc3852c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="background-filler">
+        <button class="delete-selector" id="delete" onclick="deleteSelector();"><i class="fa-solid fa-trash-can"
+                onclick="deleteSelector();"></i></button>
+    </div>
+    <center>
+
+        <div class="form-container" id="form-container">
+            <form action="/todos" method="post">
+                <input type="text" id="input" name="todos"
+                    placeholder="Åka till tandläkaren 13:30, ta med legitmation.">
+                <button class="submit" onclick="storeInput();"><i class="fa-solid fa-plus"></i></button>
+            </form>
+
+        </div>
+    </center>
+
+    <div class="list" id="list">
+        <div class="instructions">
+            <button id="instructions-green-btn"
+                style="float:left; border:none; margin-top: 10px; margin-left: 2.5%; font-size: 15px;">
+            </button>
+            <P> - ID number in the "datbase". (FOR DEVELOPERS) or/and the order the todos were added.</P>
+        </div>
+    </div>
+</body>
+
+</html>
